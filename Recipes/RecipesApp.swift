@@ -6,7 +6,9 @@ import SwiftUI
 struct RecipesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                RecipesView()
+            }
         }
     }
 }
