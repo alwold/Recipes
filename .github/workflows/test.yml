@@ -10,6 +10,6 @@ jobs:
       - name: Upload xcresult file
         uses: actions/upload-artifact@v4
         with:
-          name: Recipes-${{ env.GITHUB_RUN_NUMBER }}.xcresult
+          name: Recipes-${{ github.run_number }}.xcresult
           path: Recipes.xcresult
 
